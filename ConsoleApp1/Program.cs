@@ -10,11 +10,7 @@ Console.WriteLine($"Your wages: {wages}");
 var tax = Convert.ToDouble(wages * 5/100);
 Console.WriteLine($"Your wages including tax: {tax}");
 }
-catch(FormatException)
+finally
 {
-    Console.WriteLine("Please do not enter anything other than business hours!");
-}
-catch(OverflowException)
-{
-    Console.WriteLine("Please do not enter anything other than 24 hours!");
+    Console.WriteLine("Please note:You have entered a value that is not a number!");
 }
