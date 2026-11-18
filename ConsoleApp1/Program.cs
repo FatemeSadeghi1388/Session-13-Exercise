@@ -16,5 +16,5 @@ catch(FormatException)
 }
 catch(OverflowException)
 {
-    Console.WriteLine("Please enter as a number, not a string!");
+    Console.WriteLine("Please do not enter anything other than 24 hours!");
 }
